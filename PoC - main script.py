@@ -277,12 +277,12 @@ def process_data(df):
     return pd.DataFrame(results)
 
 
-df = pd.read_csv('/Users/Programmieren/LLM_apps/Arbeitsbereich/Real data/Participant_answers_cleaned.csv',  delimiter=',', quotechar='"')
+df = pd.read_csv('',  delimiter=',', quotechar='"')
 
 # Process the data and get results
 processed_df = process_data(df)
 
 # Save processed results to CSV
-processed_df.to_csv('/Users/Programmieren/LLM_apps/Arbeitsbereich/ProofofConcept-directory/Processed results/processed_results_real_data2.csv', index=False) # ! this output still contains the unreversed scales, this needs to be readjusdted
+processed_df.to_csv('', index=False) # ! this output still contains the unreversed scales, this needs to be readjusdted
 print("Results have been put out'")
 
