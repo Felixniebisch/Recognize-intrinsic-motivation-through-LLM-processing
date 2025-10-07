@@ -1,10 +1,10 @@
-# 🧠 Recognizing Intrinsic Motivation through LLM Processing
+# Recognizing Intrinsic Motivation through LLM Processing
 
 This repository contains the code and prompt logic for a research project investigating whether large language models (LLMs), such as GPT-4, can accurately predict **intrinsic motivation** based on open-ended, free-text descriptions of participants’ primary activities. Predictions are evaluated against scores from the validated **Intrinsic Motivation Inventory (IMI)**, grounding the project in **Self-Determination Theory** (Ryan & Deci, 2000).
 
 ---
 
-## 📌 Overview
+## Overview
 
 - **Language model:** GPT-4-turbo via OpenAI API
 - **Task:** Predict Likert-scale subscale scores (1–7) for IMI dimensions
@@ -14,7 +14,7 @@ This repository contains the code and prompt logic for a research project invest
 
 ---
 
-## 🧾 Project Structure
+## Project Structure
 
 | File | Purpose |
 |------|---------|
@@ -26,7 +26,7 @@ This repository contains the code and prompt logic for a research project invest
 
 ---
 
-## 🧪 Installation
+## Installation
 
 This project uses Python 3.11+. Install required packages via:
 
