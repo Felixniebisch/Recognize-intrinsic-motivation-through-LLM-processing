@@ -14,7 +14,7 @@ from initialization_prompt import initialization_prompt
 
 # pydantic classes that serve the output structuring
 # each class mirrors the amount of questions in the original questionnaire and thereby forces gpt to answer every one of them
-# ! It's not provable that GPT actually answers the questions, even though the prompts are linked to the questions
+
 
 load_dotenv()  #  loads the environment variables from the .env file
 
@@ -50,7 +50,7 @@ def process_data(df):
     
     try:
         response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o-mini", #adjust model if wanted
         messages=[
             {"role": "system", "content": initialization_prompt}
         ]
@@ -283,6 +283,6 @@ df = pd.read_csv('',  delimiter=',', quotechar='"')
 processed_df = process_data(df)
 
 # Save processed results to CSV
-processed_df.to_csv('', index=False) # ! this output still contains the unreversed scales, this needs to be readjusdted
+processed_df.to_csv('', index=False) 
 print("Results have been put out'")
 
