@@ -1,6 +1,6 @@
 from pydantic import BaseModel 
 # this serves the formatting of the GPT output
-class interestEnjoyment(BaseModel):
+class InterestEnjoyment(BaseModel):
     explanation: str
     question1 : int
     question2 : int
