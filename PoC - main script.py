@@ -66,7 +66,7 @@ def process_data(df):
         subscale_results = {'Index': index}
 
         try: 
-                    interest_enjoyment_results = []
+                    Interest_enjoyment_results = []
                     chat_completion = client.beta.chat.completions.parse(
                         model="gpt-4o-2024-08-06",
                         messages=[
@@ -263,7 +263,7 @@ def process_data(df):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-        subscale_results['interest enjoyment'] = interest_enjoyment_results
+        subscale_results['interest enjoyment'] = Interest_enjoyment_results
         subscale_results['perceived competence'] = Perceived_competence_results
         subscale_results['Effort importance'] =  Effort_importance_results
         subscale_results['Pressure Tension'] = Pressure_tension_results
